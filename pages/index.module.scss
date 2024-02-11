@@ -1,0 +1,259 @@
+
+.navigatorContainer{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 999;
+    border-radius: 10px;
+    transition: 250ms;
+
+    &:hover{
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 70%;
+        opacity: 1;
+    }
+}
+
+
+.homePageContainer{
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .headingContatiner{
+
+        position: relative;
+
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-size: 22px;
+        z-index: 1;
+        h1{
+            font-weight: 300;
+            background: rgb(22,22,22);
+            background: linear-gradient(133deg, rgba(22,22,22,1) 0%, rgba(17,17,17,1) 26%, rgba(7,7,7,1) 42%, rgba(50,50,50,1) 50%, rgba(80,77,77,1) 77%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;        
+        }
+
+        .portfolioYear{
+
+            position: absolute;
+            top: 15px;
+            right: 0px;
+
+            h2{
+                font-family: "Poppins", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400 !important;
+                font-style: normal;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .personalDetails{
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        text-align: left;
+        z-index: 1;
+
+        h3{
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+    .bgImg{
+        position: absolute; 
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+        right: 0;       
+    }
+}
+
+.introContainer{
+    height: 100vh;
+    background-color: #191818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+
+    .heading{
+        h3{
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 70px;
+        }
+    }
+
+    .introPara{
+        p{
+            font-family: "Poppins", sans-serif;
+            word-break: break-word;
+            font-size: 20px;
+        }
+    }
+
+    .digitalSign{
+        h3{
+            font-family: "Nothing You Could Do", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
+
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    h2{
+        margin: 0;
+    }
+    .skillsHeading{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 70px;
+    }
+
+    .listing{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: scroll;
+
+        .reactLogo{
+            position: relative;
+            width: 100px;
+            min-height: 100px;
+            border-radius: 40px;
+        }
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
+
+.projectContainer{
+    background-color: #191818;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    .heading{
+        h3{
+            color: white;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 70px;
+            margin: 0;
+        }
+    }
+    .listing{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .projectCard{
+            position: relative;
+            min-height: 360px;
+            min-width: 283px;
+            border: 1px solid white;
+            transition: 250ms;
+            
+            &:hover{
+                box-shadow: 0px 0px 8px 0px white;
+                .cardDetailsContainer{
+                    transform: scaleX(1);
+                    transform: scaleY(1);
+                }
+            }
+
+            .cardDetailsContainer{
+                color: white;
+                transition: 250ms;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #191818d3;
+                transform: scaleX(0);
+                transform: scaleY(0);
+                font-family: "Poppins", sans-serif;
+                
+                .card{
+                    padding: 0px 10px;
+                    color: white;
+                    .heading{
+                        h3{
+                            font-family: "Poppins", sans-serif;
+                            font-size: 20px;
+                            color: white;
+                        }                
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.contactContainer{
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    .heading{
+        h3{
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 30px;
+        }
+    }
+
+    .links{
+        .logo{
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    }
+}
